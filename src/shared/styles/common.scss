@@ -5,6 +5,9 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
+  @include desktop {
+    max-width: 1240px;
+  }
 }
 .visuallyHidden {
   position: absolute !important;

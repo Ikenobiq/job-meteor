@@ -6,10 +6,12 @@ import Advantages from "./Advantages/Advantages";
 import Chosen from "./Chosen/Chosen";
 import Hero from "./Hero/Hero";
 import Blog from "./Blog/Blog";
+import Ads from "./Ads/Ads";
+import Footer from "../../client/Footer/Footer";
 
 const HomePage = () => {
   return (
-    <>
+    <main>
       <Header />
       <Hero />
       <SearchMainSection />
@@ -17,8 +19,9 @@ const HomePage = () => {
       <Chosen />
       <AddVacation />
       <Blog />
-      <p>dawdaw</p>
-    </>
+      <Ads />
+      <Footer />
+    </main>
   );
 };
 export default HomePage;

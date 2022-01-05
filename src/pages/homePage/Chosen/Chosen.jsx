@@ -9,7 +9,7 @@ import yahoomob from "../../../shared/images/mobile/company/yahoomob.png";
 
 const Chosen = () => {
   return (
-    <>
+    <div>
       <h3>Нас Выбрали</h3>
       <ul>
         <li>
@@ -37,7 +37,7 @@ const Chosen = () => {
           <img src={xzmob} alt="Uber logo" />
         </li>
       </ul>
-    </>
+    </div>
   );
 };
 export default Chosen;

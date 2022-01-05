@@ -12,19 +12,17 @@
     justify-content: center;
   }
   &dots li {
+    display: flex;
     list-style: none;
     margin-right: 10px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid;
     border-radius: 50%;
     border-color: getColor("text-accent");
     background-color: getColor("text-secondary");
   }
   &dots button {
     cursor: pointer;
-    text-indent: -9999px;
-    font-size: 1px;
+    padding: 0px;
+    font-size: 0;
     width: 11px;
     height: 11px;
     border: 1px solid;
@@ -34,8 +32,5 @@
   }
   &dots li.slick-active {
     background-color: getColor("text-accent");
-  }
-  &-dots li button {
-    background-color: red;
   }
 }

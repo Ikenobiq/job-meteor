@@ -7,15 +7,30 @@ const SimpleSlider = () => {
     dots: true,
     arrows: false,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     autoplay: true,
     speed: 800,
     autoplaySpeed: 10000,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1269,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+    ],
   };
   return (
     <Slider {...settings}>
+      <li>
+        <img src={blogmob} alt="blog img" />
+        <p>Advice to job seekers</p>
+        <p>18.04.2021</p>
+      </li>
       <li>
         <img src={blogmob} alt="blog img" />
         <p>Advice to job seekers</p>
