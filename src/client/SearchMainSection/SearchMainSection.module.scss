@@ -2,6 +2,9 @@
 .mainDiv {
   margin-top: 60px;
   min-width: 335px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .searchDiv {
   position: relative;

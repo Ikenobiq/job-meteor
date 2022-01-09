@@ -23,6 +23,7 @@
   margin-top: 25px;
   margin-left: 30px;
   margin-bottom: 38px;
+  max-width: 335px;
   color: getColor("text-accent");
   &::after {
     position: absolute;
@@ -42,6 +43,7 @@
   font-size: 16px;
   line-height: 22px;
   margin-left: 30px;
+  max-width: 335px;
   color: getColor("text-paragraph");
 }
 .linkDiv {
