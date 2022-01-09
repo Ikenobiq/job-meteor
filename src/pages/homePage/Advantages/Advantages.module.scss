@@ -1,0 +1,62 @@
+@import "../../../shared/styles/common.scss";
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list .item:nth-child(1n) {
+  background-color: #c893ea;
+}
+.list .item:nth-child(2n) {
+  background-color: #e2cbff;
+}
+.list .item:nth-child(3n) {
+  background-color: #f0e4ff;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 335px;
+  min-height: 259px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.heading {
+  position: relative;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor("text-primary");
+  margin-bottom: 24px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: -15%;
+    left: 0%;
+    width: 84px;
+    height: 1px;
+    margin-bottom: 20px;
+    margin-left: 124px;
+    background-color: getColor("text-primary");
+  }
+}
+.paragraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: getColor("text-primary");
+  text-align: center;
+}

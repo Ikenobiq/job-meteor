@@ -2,7 +2,7 @@ import "./shared/styles/common.scss";
 import HomePage from "./pages/homePage/HomePage";
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
       <HomePage />
     </div>
   );

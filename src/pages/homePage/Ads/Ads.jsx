@@ -1,19 +1,23 @@
-import astronaut from "../../../shared/images/mobile/astronaut.jpg";
+import astronaut from "../../../shared/images/mobile/astronaut.png";
 import appstore from "../../../shared/images/mobile/appstore.png";
 import googleplay from "../../../shared/images/mobile/googleplay.png";
-
+import styles from "./Ads.module.scss";
 const Ads = () => {
   return (
-    <div>
-      <img src={astronaut} alt="kosmonaut" />
-      <p>Скачай наше приложение</p>
-      <p>Работодатель смогут найти вас и предложить отличную работу.</p>
-      <a>
-        <img src={appstore} alt="app store" />
-      </a>
-      <a>
-        <img src={googleplay} alt="google play" />
-      </a>
+    <div className={`${styles.Ads} ${"container"}`}>
+      <img className={styles.astronaut} src={astronaut} alt="kosmonaut" />
+      <h3 className={styles.heading}>Скачай наше приложение</h3>
+      <p className={styles.paragraph}>
+        Работодатель смогут найти вас и предложить отличную работу.
+      </p>
+      <div className={styles.linkDiv}>
+        <a className={styles.storeLink} href="/">
+          <img className={styles.storeImg} src={appstore} alt="app store" />
+        </a>
+        <a className={styles.storeLink} href="/">
+          <img className={styles.storeImg} src={googleplay} alt="google play" />
+        </a>
+      </div>
     </div>
   );
 };

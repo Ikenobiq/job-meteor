@@ -1,6 +1,5 @@
 // import styles from "./HomePage.module.scss";
 import Header from "../../client/Header";
-import SearchMainSection from "../../client/SearchMainSection";
 import AddVacation from "./AddVacation/AddVacation";
 import Advantages from "./Advantages/Advantages";
 import Chosen from "./Chosen/Chosen";
@@ -14,7 +13,6 @@ const HomePage = () => {
     <main>
       <Header />
       <Hero />
-      <SearchMainSection />
       <Advantages />
       <Chosen />
       <AddVacation />

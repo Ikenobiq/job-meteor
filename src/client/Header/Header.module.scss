@@ -1,0 +1,34 @@
+@import "../../shared/styles/common.scss";
+.header {
+  background-color: getColor("bg-secondary");
+  padding: 5px 15px;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.item {
+}
+a {
+  text-decoration: none;
+  list-style: none;
+  color: getColor("text-secondary");
+}
+.jobSeeker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.employer {
+  display: none;
+}
+.hr {
+  display: none;
+}
+.svg {
+  width: 16px;
+  height: 16px;
+  fill: getColor("text-secondary");
+  margin-left: 4px;
+}

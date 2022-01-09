@@ -1,56 +1,110 @@
-import Ads from "../../pages/homePage/Ads/Ads";
+import styles from "./Footer.module.scss";
 import svg from "../../shared/images/sprite.svg";
+import googleplayfoot from "../../shared/images/mobile/googleplayfoot.png";
+import appstorefoot from "../../shared/images/mobile/appstorefoot.png";
 const Footer = () => {
   return (
-    <footer>
-      <div>
-        <h3>Job Seekers</h3>
-        <a href="/">Search Jobs</a>
-        <a href="/">Create Resume</a>
-        <a href="/">Job Allert</a>
-        <a href="/">Advice to Job Seeker</a>
+    <footer className={`${styles.footer} ${"container"}`}>
+      <div className={styles.footerLinksDiv}>
+        <h3 className={styles.heading}>Job Seekers</h3>
+        <a className={styles.link} href="/">
+          Search Jobs
+        </a>
+        <a className={styles.link} href="/">
+          Create Resume
+        </a>
+        <a className={styles.link} href="/">
+          Job Allert
+        </a>
+        <a className={styles.link} href="/">
+          Advice to Job Seeker
+        </a>
       </div>
-      <h3>Employer</h3>
-      <a href="/">Post a Job</a>
-      <a href="/">Search Resume</a>
-      <a href="/">Support</a>
-      <a href="/">Advice to Employer</a>
-      <div>
-        <h3>Job meteor</h3>
-        <a href="/">About Us</a>
-        <a href="/">Blog</a>
-        <a href="/">FAQ</a>
+      <div className={styles.footerLinksDiv}>
+        <h3 className={styles.heading}>Employer</h3>
+        <a className={styles.link} href="/">
+          Post a Job
+        </a>
+        <a className={styles.link} href="/">
+          Search Resume
+        </a>
+        <a className={styles.link} href="/">
+          Support
+        </a>
+        <a className={styles.link} href="/">
+          Advice to Employer
+        </a>
       </div>
-      <div>
-        <h3>Partner with Us</h3>
-        <a href="/">Advertising on the website</a>
-        <a href="/">Affiliate Program</a>
-        <a href="/">Contact Us</a>
+      <div className={styles.footerLinksDiv}>
+        <h3 className={styles.heading}>Job meteor</h3>
+        <a className={styles.link} href="/">
+          About Us
+        </a>
+        <a className={styles.link} href="/">
+          Blog
+        </a>
+        <a className={styles.link} href="/">
+          FAQ
+        </a>
       </div>
-      <div>
-        <svg>
+      <div className={styles.footerLinksDiv}>
+        <h3 className={styles.heading}>Partner with Us</h3>
+        <a className={styles.link} href="/">
+          Advertising on the website
+        </a>
+        <a className={styles.link} href="/">
+          Affiliate Program
+        </a>
+        <a className={styles.link} href="/">
+          Contact Us
+        </a>
+      </div>
+      <div className={styles.svgDiv}>
+        <svg className={styles.svg}>
           <use href={`${svg}#twitter`}></use>
         </svg>
-        <svg>
+        <svg className={styles.svg}>
           <use href={`${svg}#linkedin`}></use>
         </svg>
-        <svg>
+        <svg className={styles.svg}>
           <use href={`${svg}#facebook`}></use>
         </svg>
-        <svg>
+        <svg className={styles.svg}>
           <use href={`${svg}#instagram`}></use>
         </svg>
-        <svg>
-          <use href={`${svg}#youtube`}></use>
+        <svg className={styles.svg}>
+          <use className={styles.use} href={`${svg}#youtube`}></use>
         </svg>
-        <svg>
-          <use href={`${svg}#whatsapp`}></use>
+        <svg className={styles.svg}>
+          <use className={styles.use} href={`${svg}#whatsapp`}></use>
         </svg>
       </div>
-      <div>
-        <a href="/">Privacy Policy </a>
-        <a href="/">Terms of Use</a>
-        <p>© 2021 Job Meteor. All rights reserved</p>
+      <div className={styles.store}>
+        <ul className={styles.storeList}>
+          <li className={styles.storeItem}>
+            <a className={styles.storeLink} href="/">
+              <img className={styles.storeImg} src={googleplayfoot} alt="" />
+            </a>
+          </li>
+          <li className={styles.storeItem}>
+            <a className={styles.storeLink} href="/">
+              <img className={styles.storeImg} src={appstorefoot} alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className={styles.privacy}>
+        <a className={styles.privacyLink} href="/">
+          Privacy Policy{" "}
+        </a>
+        <a className={styles.privacyLink} href="/">
+          Terms of Use
+        </a>
+      </div>
+      <div className={styles.reserved}>
+        <p className={styles.reservedP}>
+          © 2021 Job Meteor. All rights reserved
+        </p>
       </div>
     </footer>
   );

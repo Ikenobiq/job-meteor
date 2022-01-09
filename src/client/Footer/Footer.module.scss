@@ -1,0 +1,96 @@
+@import "../../shared/styles/common.scss";
+.footer {
+  margin-top: 60px;
+  background-color: getColor("text-primary");
+  padding-top: 122px;
+  padding-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerLinksDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.heading {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: getColor("text-secondary");
+  margin-bottom: 15px;
+}
+.link {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: getColor("text-secondary");
+  text-align: center;
+  margin-bottom: 10px;
+}
+.svgDiv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  padding: 16px;
+}
+.svg {
+  fill: getColor("text-secondary");
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  &:hover,
+  :focus {
+    border-radius: 5px;
+    fill: getColor("text-accent");
+    background-color: getColor("text-secondary");
+    --color1: #2a172d;
+    --color2: #ffffff;
+  }
+}
+.store {
+  margin-top: 15px;
+  margin-bottom: 50px;
+
+  &List {
+    display: flex;
+    flex-direction: row;
+  }
+  &Item {
+    margin-right: 10px;
+  }
+  &Img {
+    width: 108px;
+    height: 35px;
+  }
+}
+.privacy {
+  display: flex;
+  flex-direction: row;
+  &Link {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: getColor("text-secondary");
+
+    &:first-child {
+      border-right: 1px solid getColor("text-secondary");
+      margin-right: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+.reserved {
+  margin-top: 12px;
+  &P {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: getColor("text-secondary");
+  }
+}

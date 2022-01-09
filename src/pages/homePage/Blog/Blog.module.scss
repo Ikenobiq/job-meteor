@@ -1,0 +1,40 @@
+@import "../../../shared/styles/common.scss";
+.blog {
+  position: relative;
+  padding-top: 40px;
+}
+.headingDiv {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 36px;
+}
+.heading {
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: getColor("text-accent");
+  &::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: -40%;
+    width: 170px;
+    height: 1px;
+    background-color: getColor("text-accent");
+  }
+}
+.link {
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 168px;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: getColor("hover-color");
+  border-bottom: 1px solid getColor("hover-color");
+}
