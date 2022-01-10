@@ -1,10 +1,11 @@
 import "./shared/styles/common.scss";
-import HomePage from "./pages/homePage/HomePage";
+import Path from "./navigation/Routes";
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <HomePage />
-    </div>
+    <BrowserRouter>
+      <Path />
+    </BrowserRouter>
   );
 }
 

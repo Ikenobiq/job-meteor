@@ -2,7 +2,7 @@ import styles from "./Header.module.scss";
 import svg from "../../shared/images/sprite.svg";
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${"container"}`}>
       <nav className={styles.nav}>
         <ul className={styles.list}>
           <li className={styles.item}>

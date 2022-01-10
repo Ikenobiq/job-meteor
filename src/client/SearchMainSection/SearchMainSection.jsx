@@ -17,7 +17,9 @@ const SearchMainSection = () => {
           <use className={styles.point} href={`${svg}#point`}></use>
         </svg>
       </div>
-      <Button className={styles.searchBtn} text="Найти кандидатов" />
+      <a href="./find">
+        <Button className={styles.searchBtn} text="Найти кандидатов" />
+      </a>
     </div>
   );
 };

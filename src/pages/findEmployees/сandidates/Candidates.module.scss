@@ -1,0 +1,98 @@
+@import "../../../shared/styles/common.scss";
+.candidates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.settingsDiv {
+  width: 335px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-bottom: 32px;
+}
+.settingsBtn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.svg {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.result {
+  display: flex;
+  width: 335px;
+  &Wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 335px;
+  }
+  &Heading {
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: getColor("text-accent");
+    max-width: 270px;
+    margin-bottom: 25px;
+    &::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      top: -23%;
+      width: 170px;
+      height: 1px;
+      background-color: getColor("text-accent");
+    }
+  }
+  &Span {
+    color: getColor("hover-color");
+  }
+  &DivParagraph {
+    max-width: 155px;
+  }
+  &Paragraph {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: getColor("text-paragraph");
+  }
+}
+.interval {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 155px;
+  &Set {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: getColor("hover-color");
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  &Btn {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &Svg {
+    align-items: flex-end;
+    right: 0;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    fill: getColor("hover-color");
+    cursor: pointer;
+  }
+}
