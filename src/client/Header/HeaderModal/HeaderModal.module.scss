@@ -1,0 +1,47 @@
+@import "../../../shared/styles/common.scss";
+.modal {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: red;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: getColor("text-primary");
+}
+.item {
+  color: getColor("text-primary");
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  padding: 15px;
+  border-bottom: 1px solid getColor("text-primary");
+}
+.jobSeeker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  color: getColor("text-primary");
+}
+.employer {
+  color: getColor("text-primary");
+  text-decoration: none;
+  list-style: none;
+}
+.hr {
+  color: getColor("text-primary");
+  text-decoration: none;
+  list-style: none;
+}
+.svgNetwork {
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  fill: getColor("text-primary");
+}

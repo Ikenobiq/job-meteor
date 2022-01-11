@@ -1,0 +1,102 @@
+@import "../../../shared/styles/common.scss";
+.item {
+  padding: 16px;
+  border: 1px solid getColor("text-accent-secondary");
+  margin-bottom: 30px;
+}
+.avatarDiv {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 26px;
+}
+.avatar {
+  width: 70px;
+  height: 70px;
+}
+.describe {
+  display: inline-block;
+  width: 214px;
+  &Heading {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: getColor("text-primary");
+    margin-bottom: 6px;
+  }
+  &Paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: getColor("text-primary");
+    margin-bottom: 6px;
+  }
+  &City {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    color: getColor("text-paragraph");
+  }
+}
+.svgPoint {
+  margin-right: 12px;
+  width: 12px;
+  height: 17px;
+  fill: getColor("text-paragraph");
+}
+.experienceList {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555556;
+  margin-bottom: 20px;
+}
+.isOnline {
+  display: flex;
+  flex-direction: row;
+}
+.isOnlineP {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 20px;
+  color: #4caf50;
+  &::before {
+    display: flex;
+    flex-direction: row;
+    content: " ";
+    width: 12px;
+    height: 12px;
+    background-color: #4caf50;
+    border-radius: 25px;
+    margin-right: 4px;
+  }
+}
+.status {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin-right: 76px;
+}
+.statusP {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #adadad;
+  width: 164px;
+}
+.statusSvgDiv {
+  margin-left: auto;
+}
+.statusHeart {
+  width: 24px;
+  height: 24px;
+  fill: getColor("hover-color");
+}
+.statusMore {
+  width: 24px;
+  height: 24px;
+  fill: getColor("hover-color");
+}

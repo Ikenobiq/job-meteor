@@ -11,7 +11,7 @@ import Footer from "../../client/Footer/Footer";
 const HomePage = () => {
   return (
     <main>
-      <Header />
+      <Header burger={true} />
       <Hero />
       <Advantages />
       <Chosen />

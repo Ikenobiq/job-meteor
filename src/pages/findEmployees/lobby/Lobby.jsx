@@ -8,7 +8,7 @@ const Lobby = () => {
         <p className={styles.person}>
           <svg className={styles.svg}>
             <use href={`${svg}#person`}></use>
-          </svg>{" "}
+          </svg>
           Юра Марченко
         </p>
       </div>

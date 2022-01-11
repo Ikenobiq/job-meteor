@@ -1,15 +1,36 @@
 import Button from "../../../shared/components/Button/Button";
 import svg from "../../../shared/images/sprite.svg";
 import styles from "./Candidates.module.scss";
+import { useState } from "react";
+import Modal from "../../../shared/components/Modal/Modal";
+import Filters from "../../../client/Filters/Filters";
 
 const Candidates = () => {
+  const [showFilterModal, setShowFilterModal] = useState(true);
+  const toggleModal = () => {
+    setShowFilterModal(!showFilterModal);
+  };
+  const closeModal = () => {
+    setShowFilterModal(false);
+  };
   return (
     <div className={`${styles.candidates} ${"container"}`}>
       <div className={styles.settingsDiv}>
-        <svg className={styles.svg}>
-          <use href={`${svg}#settings`}></use>
-        </svg>
-        <Button className={styles.settingsBtn} />
+        <Button
+          className={styles.settingsBtn}
+          text={
+            <svg className={styles.svg}>
+              <use href={`${svg}#settings`}></use>
+            </svg>
+          }
+          onClick={toggleModal}
+          type={"button"}
+          variant="svg"></Button>
+        {showFilterModal && (
+          <Modal closeModal={closeModal}>
+            <Filters closeModal={closeModal} />
+          </Modal>
+        )}
       </div>
       <div className={styles.result}>
         <h2 className={styles.resultHeading}>

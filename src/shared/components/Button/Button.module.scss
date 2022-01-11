@@ -1,1 +1,48 @@
 @import "../../styles/common.scss";
+.button {
+  &Primary {
+    min-width: 335px;
+    min-height: 48px;
+    background-color: getColor("bg-third");
+    border-style: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: getColor("text-secondary");
+
+    &:focus,
+    &:hover {
+      background-color: getColor("bg-btn");
+      color: getColor("text-btn");
+    }
+  }
+  &Secondary {
+    min-width: 335px;
+    min-height: 48px;
+    background-color: getColor("bg-third");
+    border-style: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: getColor("text-secondary");
+
+    &:focus,
+    &:hover {
+      background-color: getColor("bg-btn");
+      color: getColor("text-btn");
+    }
+  }
+}
+
+.svg {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border-style: none;
+}

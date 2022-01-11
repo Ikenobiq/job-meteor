@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchSummaries } from "../../fetch/fecth";
-import SummariesList from "./SummariesList";
+import SummariesList from "./SummariesList/SummariesList";
+import styles from "./Summaries.module.scss";
 
 const CV = () => {
   const [summaries, setSummaries] = useState([]);
@@ -8,14 +9,13 @@ const CV = () => {
     const getSummaries = async () => {
       try {
         const result = await fetchSummaries();
-        console.log(result);
         setSummaries(result);
       } catch (error) {}
     };
     getSummaries();
   }, []);
   return (
-    <div>
+    <div className={`${styles.cv} ${"container"}`}>
       <SummariesList summaries={summaries} />
     </div>
   );
