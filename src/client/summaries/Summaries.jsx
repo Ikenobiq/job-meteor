@@ -1,22 +1,17 @@
-import {useEffect, useMemo, useState} from "react";
-import {fetchAllSummaries} from "../../fetch/fetch";
 import SummariesList from "./SummariesList/SummariesList";
 import styles from "./Summaries.module.scss";
-import svg from "../../shared/images/sprite.svg";
 import Pagination from "../Paginator/Pagination";
 
 
-const PageSize = 10;
-
-const CV = ({summaries, totalSummaryCount, currentPage, onCurrentPageChanged}) => {
+const CV = ({summaries, totalSummaryCount, currentPage, pageSize, onCurrentPageChanged}) => {
     return (
         <div className={`${styles.cv} ${"container"}`}>
-            <SummariesList summaries={summaries} filters/>
+            <SummariesList summaries={summaries}/>
             <Pagination
                 className="pagination-bar"
                 currentPage={currentPage}
                 totalCount={totalSummaryCount}
-                pageSize={PageSize}
+                pageSize={pageSize}
                 onPageChange={page => onCurrentPageChanged(page)}
             />
         </div>
