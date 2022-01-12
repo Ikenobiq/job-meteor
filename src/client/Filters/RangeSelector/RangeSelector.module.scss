@@ -1,0 +1,60 @@
+@import "../../../shared/styles/common.scss";
+.RangeSelector {
+  display: flex;
+  flex-direction: column;
+}
+.RangeWrap {
+  margin-bottom: 26.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.RangeDiv {
+  width: 250px;
+}
+.rangeLabelBefor {
+  margin-right: 12px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555556;
+}
+.rangeLabelAfter {
+  margin-left: 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555556;
+}
+.RangeInputWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.RangeInputDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 113px;
+  margin-right: 10px;
+}
+.rengeInput {
+  width: 85px;
+  display: flex;
+  margin-right: 10px;
+  height: 36px;
+}
+.rangeInputBefor,
+.rangeInputAfter,
+.rangeInputBetween {
+  margin-right: 10px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #555556;
+}
+.rangeInputAfter {
+  margin: 0px;
+}

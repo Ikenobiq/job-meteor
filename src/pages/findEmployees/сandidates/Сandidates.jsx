@@ -5,7 +5,7 @@ import { useState } from "react";
 import Modal from "../../../shared/components/Modal/Modal";
 import Filters from "../../../client/Filters/Filters";
 
-const Candidates = () => {
+const Candidates = ({ withPhoto, onWithPhotoChange }) => {
   const [showFilterModal, setShowFilterModal] = useState(true);
   const toggleModal = () => {
     setShowFilterModal(!showFilterModal);
@@ -28,7 +28,11 @@ const Candidates = () => {
           variant="svg"></Button>
         {showFilterModal && (
           <Modal closeModal={closeModal}>
-            <Filters closeModal={closeModal} />
+            <Filters
+              closeModal={closeModal}
+              withPhoto={withPhoto}
+              onWithPhotoChange={onWithPhotoChange}
+            />
           </Modal>
         )}
       </div>
