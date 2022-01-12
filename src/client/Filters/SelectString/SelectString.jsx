@@ -1,14 +1,17 @@
+import classNames from "classnames";
 import PropTypes from "prop-types";
-import svg from "../../../shared/images/sprite.svg";
 import styles from "../Filters.module.scss";
 const SelectString = ({ color, img, text, id, value, svgType }) => {
   return (
     <>
       <li className={styles.filtersJobExperienceInputItem}>
-        <div className={`${styles.filtersJobExperienceCheckbox} ${color}`}>
+        <div className={styles.filtersJobExperienceCheckbox}>
           <input
             id={id}
-            className={`${styles.filtersCheckbox} ${color}`}
+            className={classNames(
+              styles.filtersCheckbox,
+              color ? styles.filtersCheckboxYellow : styles.filtersCheckbox,
+            )}
             type="checkbox"
             required
           />

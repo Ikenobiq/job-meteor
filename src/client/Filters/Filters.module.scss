@@ -212,6 +212,33 @@
     background-color: #ffe177;
     background-image: url(../../shared/images/checkbox.svg);
   }
+  &CheckboxYellow {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  &JobExperienceLabel {
+    display: flex;
+    align-items: center;
+  }
+  &CheckboxYellow + &JobExperienceLabel::before {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #ffe177;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-right: 8px;
+  }
+  &CheckboxYellow:checked + &JobExperienceLabel::before {
+    border-color: getColor("text-primary");
+    background-color: getColor("text-primary");
+    background-image: url(../../shared/images/checkbox.svg);
+  }
 
   &JobExperienceInputItem {
     display: flex;

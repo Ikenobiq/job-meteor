@@ -6,6 +6,7 @@ import SalaryFilter from "./SalaryFilter/SalaryFilter";
 import JobExperienceFilter from "./JobExperienceFilter/JobExperienceFilter";
 import LanguageFilter from "./LanguageFilter/LanguageFilter";
 import TypeOfEmployment from "./TypeOfEmployment/TypeOfEmployment";
+import EducationFilter from "./EducationFilter/EducationFilter";
 
 const Filters = ({ withPhoto, onWithPhotoChange }) => {
   return (
@@ -26,6 +27,7 @@ const Filters = ({ withPhoto, onWithPhotoChange }) => {
         <JobExperienceFilter />
         <LanguageFilter />
         <TypeOfEmployment />
+        <EducationFilter />
       </div>
     </div>
   );
