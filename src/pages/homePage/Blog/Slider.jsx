@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import blogmob from "../../../shared/images/mobile/blogmob.jpg";
+import blog from "../../../shared/images/desktop/blog.jpg";
 import styles from "./Slider.module.scss";
 
 const SimpleSlider = () => {
@@ -16,7 +16,7 @@ const SimpleSlider = () => {
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1269,
+        breakpoint: 1240,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -28,22 +28,22 @@ const SimpleSlider = () => {
   return (
     <Slider {...settings}>
       <li className={styles.item}>
-        <img className={styles.img} src={blogmob} alt="blog img" />
+        <img className={styles.img} src={blog} alt="blog img" />
         <h3 className={styles.heading}>Advice to job seekers</h3>
         <p className={styles.paragraph}>18.04.2021</p>
       </li>
       <li className={styles.item}>
-        <img className={styles.img} src={blogmob} alt="blog img" />
+        <img className={styles.img} src={blog} alt="blog img" />
         <h3 className={styles.heading}>Advice to job seekers</h3>
         <p className={styles.paragraph}>18.04.2021</p>
       </li>
       <li className={styles.item}>
-        <img className={styles.img} src={blogmob} alt="blog img" />
+        <img className={styles.img} src={blog} alt="blog img" />
         <h3 className={styles.heading}>Advice to job seekers</h3>
         <p className={styles.paragraph}>18.04.2021</p>
       </li>
       <li className={styles.item}>
-        <img className={styles.img} src={blogmob} alt="blog img" />
+        <img className={styles.img} src={blog} alt="blog img" />
         <h3 className={styles.heading}>Advice to job seekers</h3>
         <p className={styles.paragraph}>18.04.2021</p>
       </li>

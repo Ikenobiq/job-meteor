@@ -2,7 +2,10 @@
 .item {
   border: 1px solid #d1d1d1;
   padding: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  @include desktop {
+    margin-bottom: 76px;
+  }
 }
 .img {
   width: 312px;
@@ -10,6 +13,10 @@
   background-repeat: no-repeat;
   object-fit: cover;
   margin-bottom: 30px;
+  @include desktop {
+    width: 360px;
+    height: 180px;
+  }
 }
 .heading {
   font-family: Montserrat, sans-serif;
@@ -19,6 +26,8 @@
   text-transform: capitalize;
   margin-bottom: 15px;
   color: getColor("text-accent");
+  @include desktop {
+  }
 }
 .paragraph {
   font-family: Montserrat;
@@ -26,4 +35,6 @@
   font-size: 14px;
   line-height: 17px;
   color: #222222;
+  @include desktop {
+  }
 }

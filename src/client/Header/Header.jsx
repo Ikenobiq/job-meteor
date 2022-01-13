@@ -4,6 +4,8 @@ import { useState } from "react";
 import Modal from "../../shared/components/Modal/Modal";
 import HeaderModal from "./HeaderModal/HeaderModal";
 import Button from "../../shared/components/Button/Button";
+import classNames from "classnames";
+
 const Header = ({ burger }) => {
   const [showModal, setShowModal] = useState(false);
   const [showBurger] = useState(burger);
@@ -15,7 +17,11 @@ const Header = ({ burger }) => {
     setShowModal(false);
   };
   return (
-    <header className={`${styles.header} ${"container"}`}>
+    <header
+      className={classNames(
+        styles.header,
+        burger ? styles.header : styles.headerColor,
+      )}>
       <nav className={styles.nav}>
         <ul className={styles.list}>
           <li className={styles.item}>
@@ -31,12 +37,28 @@ const Header = ({ burger }) => {
               Работодатель
             </a>
           </li>
-          <li className={styles.item}>
+          <li>
             <a className={styles.hr} href="/">
               HR
             </a>
           </li>
         </ul>
+        <div className={styles.HeaderDesktopDiv}>
+          <ul className={styles.HeaderDesktopList}>
+            <li className={styles.HeaderDesktopItem}>
+              <svg className={styles.svgDesk}>
+                <use className={styles.Arrow} href={`${svg}#network`}></use>
+              </svg>
+              <p className={styles.HeaderDesktopParagraph}>RU</p>
+              <svg className={styles.svgDesk}>
+                <use className={styles.Arrow} href={`${svg}#arrowDown`}></use>
+              </svg>
+            </li>
+            <li>
+              <p className={styles.HeaderDesktopIn}>Войти</p>
+            </li>
+          </ul>
+        </div>
         {showBurger && (
           <Button
             className={styles.HeaderModal}

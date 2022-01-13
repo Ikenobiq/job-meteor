@@ -1,7 +1,11 @@
 @import "../../../shared/styles/common.scss";
 .hero {
   padding: 76px 20px 47px 20px;
+
   background-color: getColor("bg-third");
+  @include desktop {
+    padding: 76px 100px 60px 100px;
+  }
 }
 .paragraph {
   margin-bottom: 20px;
@@ -12,6 +16,11 @@
   text-align: center;
   text-transform: uppercase;
   color: getColor("text-accent-secondary");
+  @include desktop {
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+  }
 }
 .title {
   font-family: Montserrat, sans-serif;
@@ -21,4 +30,11 @@
   text-align: center;
   color: getColor("text-secondary");
   margin-bottom: 60px;
+  @include desktop {
+    font-size: 64px;
+    line-height: 77px;
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

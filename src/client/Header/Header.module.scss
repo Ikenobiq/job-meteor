@@ -2,13 +2,56 @@
 .header {
   background-color: getColor("bg-secondary");
   padding: 5px 15px;
+  @include desktop {
+    margin: 0 auto;
+    height: 49px;
+    padding: 0px 100px;
+  }
+}
+.headerColor {
+  background-color: getColor("text-primary");
+  padding: 5px 15px;
+  @include desktop {
+    margin: 0 auto;
+    height: 49px;
+    padding: 0px 100px;
+  }
 }
 .list {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  @include desktop {
+    display: inline-flex;
+    align-items: center;
+    height: 49px;
+    justify-content: flex-start;
+  }
 }
 .item {
+  @include desktop {
+    position: relative;
+    margin-right: 25px;
+    :after {
+      position: absolute;
+      top: 2px;
+      right: -25px;
+      content: "";
+      width: 1px;
+      height: 12px;
+      background-color: getColor("text-secondary");
+      margin-right: 15px;
+    }
+  }
+}
+.nav {
+  @include desktop {
+    display: flex;
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+  }
 }
 a {
   text-decoration: none;
@@ -22,15 +65,24 @@ a {
 }
 .employer {
   display: none;
+  @include desktop {
+    display: flex;
+  }
 }
 .hr {
   display: none;
+  @include desktop {
+    display: flex;
+  }
 }
 .svg {
   width: 16px;
   height: 16px;
   fill: getColor("text-secondary");
   margin-left: 4px;
+  @include desktop {
+    display: none;
+  }
   &:hover,
   :focus {
     fill: getColor("hover-color");
@@ -45,4 +97,39 @@ a {
   padding-right: 5px;
   width: 25px;
   height: 24px;
+}
+.HeaderDesktop {
+  &Div {
+    display: none;
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &List {
+    display: flex;
+    align-items: center;
+  }
+  &Paragraph {
+    color: getColor("text-secondary");
+  }
+  &In {
+    color: getColor("text-secondary");
+    align-items: center;
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+  }
+  &Item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15px;
+  }
+}
+.svgDesk {
+  fill: getColor("text-secondary");
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  margin-right: 5px;
 }

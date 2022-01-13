@@ -7,12 +7,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include desktop {
+    margin-top: 164px;
+    flex-direction: column;
+  }
+}
+.FooterBaseWrap {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 750px;
+  }
 }
 .footerLinksDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
+  @include desktop {
+  }
 }
 .heading {
   font-family: Montserrat, sans-serif;
@@ -50,10 +64,16 @@
     --color1: #2a172d;
     --color2: #ffffff;
   }
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 .store {
   margin-top: 15px;
   margin-bottom: 50px;
+  @include desktop {
+    display: none;
+  }
 
   &List {
     display: flex;

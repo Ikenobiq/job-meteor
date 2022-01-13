@@ -1,11 +1,18 @@
 @import "../../../shared/styles/common.scss";
 .advantages {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  @include desktop {
+    margin: 80px auto;
+    max-width: 1240px;
+  }
 }
 .list {
   display: flex;
   flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
 }
 .list .item:nth-child(1n) {
   background-color: #c893ea;
@@ -25,6 +32,13 @@
   height: 259px;
   margin-left: auto;
   margin-right: auto;
+  @include desktop {
+    width: 396px;
+    height: 396px;
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+  }
   &:not(:last-child) {
     margin-bottom: 20px;
   }

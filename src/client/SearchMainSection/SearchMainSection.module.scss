@@ -4,6 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include desktop {
+    flex-direction: row;
+    width: 830px;
+
+    margin-right: auto;
+    margin-left: auto;
+    align-items: flex-start;
+  }
 }
 .searchDiv {
   position: relative;
@@ -25,6 +33,10 @@
     font-size: 16px;
     line-height: 22px;
     color: getColor("text-secondary");
+    @include desktop {
+      width: 410px;
+      margin-right: 8px;
+    }
 
     &::placeholder {
       display: inline-block;
@@ -42,7 +54,7 @@
   }
   &City {
     position: relative;
-    min-width: 335px;
+    width: 335px;
     min-height: 48px;
     margin-bottom: 15px;
     background-color: rgba($color: #fff, $alpha: 0.15);
@@ -53,6 +65,10 @@
     font-size: 16px;
     line-height: 22px;
     color: getColor("text-secondary");
+    @include desktop {
+      width: 205px;
+      margin-right: 8px;
+    }
 
     &::placeholder {
       display: inline-block;
@@ -86,7 +102,7 @@
   fill: getColor("text-secondary");
 }
 .searchBtn {
-  min-width: 335px;
+  width: 335px;
   min-height: 48px;
   background-color: getColor("bg-third");
   border-style: none;
@@ -97,6 +113,10 @@
   line-height: 20px;
   text-align: center;
   color: getColor("text-secondary");
+
+  @include desktop {
+    width: 199px;
+  }
 
   &:focus,
   &:hover {

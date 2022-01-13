@@ -23,12 +23,12 @@ TextField.defaultProps = {
 
 TextField.propTypes = {
   label: PropTypes.string,
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
   type: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.bool,
   value: PropTypes.string,
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
 };
 
 export default TextField;

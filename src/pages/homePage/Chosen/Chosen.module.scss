@@ -2,9 +2,15 @@
 .chosen {
   padding-top: 9px;
   padding-bottom: 38px;
-  max-width: 380px;
+  width: 380px;
   margin-left: auto;
   margin-right: auto;
+  @include desktop {
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+  }
 }
 .heading {
   position: relative;
@@ -15,6 +21,11 @@
   text-transform: uppercase;
   color: getColor("text-accent");
   margin-bottom: 30px;
+  @include desktop {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 67px;
+  }
 
   &::before {
     position: absolute;
@@ -34,13 +45,26 @@
   margin-left: -30.3px;
   margin-top: -30.3px;
   padding: 0px;
+  @include desktop {
+    margin-left: -50px;
+    margin-top: -31px;
+  }
 }
 .item {
   margin-left: 30.3px;
   margin-top: 30.3px;
   flex-basis: calc((100% - 122px) / 4);
+  @include desktop {
+    margin-left: 16px;
+    margin-top: 31px;
+    flex-basis: calc((100% - 180px) / 6);
+  }
 }
 .img {
   width: 60.5px;
   height: 37px;
+  @include desktop {
+    width: 165px;
+    height: 79px;
+  }
 }

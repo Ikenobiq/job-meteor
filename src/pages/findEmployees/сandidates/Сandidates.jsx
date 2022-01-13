@@ -6,7 +6,7 @@ import Modal from "../../../shared/components/Modal/Modal";
 import Filters from "../../../client/Filters/Filters";
 
 const Candidates = ({ hasPhoto, onHasPhotoChange }) => {
-  const [showFilterModal, setShowFilterModal] = useState(true);
+  const [showFilterModal, setShowFilterModal] = useState(false);
   const toggleModal = () => {
     setShowFilterModal(!showFilterModal);
   };
