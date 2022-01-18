@@ -13,82 +13,86 @@ import onlyfans from "../../../shared/images/desktop/company/onlyfans.png";
 import netflix from "../../../shared/images/desktop/company/netflix.png";
 const Chosen = () => {
   return (
-    <div className={`${styles.chosen} ${"container"}`}>
-      <h3 className={styles.heading}>Нас Выбрали</h3>
-      <ul className={styles.list}>
-        <li className={styles.item}>
-          <img className={styles.img} src={uber} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={yahoo} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={godaddy} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={slickdeals} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={bankofamerica} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={cnn} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={fedex} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={theheraldjournal} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={aliexpress} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={verizon} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={onlyfans} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={netflix} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={uber} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={yahoo} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={godaddy} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={slickdeals} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={bankofamerica} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={cnn} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={fedex} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={theheraldjournal} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={aliexpress} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={verizon} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={onlyfans} alt=" logo" />
-        </li>
-        <li className={styles.item}>
-          <img className={styles.img} src={netflix} alt=" logo" />
-        </li>
-      </ul>
+    <div className="container">
+      <div className={styles.chosen}>
+        <h3 className={styles.heading}>Нас Выбрали</h3>
+        <div className={styles.listWrap}>
+          <ul className={styles.list}>
+            <li className={styles.item}>
+              <img className={styles.img} src={uber} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={yahoo} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={godaddy} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={slickdeals} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={bankofamerica} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={cnn} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={fedex} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={theheraldjournal} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={aliexpress} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={verizon} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={onlyfans} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={netflix} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={uber} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={yahoo} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={godaddy} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={slickdeals} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={bankofamerica} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={cnn} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={fedex} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={theheraldjournal} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={aliexpress} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={verizon} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={onlyfans} alt=" logo" />
+            </li>
+            <li className={styles.item}>
+              <img className={styles.img} src={netflix} alt=" logo" />
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

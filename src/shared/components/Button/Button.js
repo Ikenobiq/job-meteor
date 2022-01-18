@@ -27,5 +27,4 @@ Button.propTypes = {
   variant: PropTypes.oneOf(["primary", "secondary", "svg"]),
   onClick: PropTypes.func,
   className: PropTypes.string,
-  text: PropTypes.string,
 };

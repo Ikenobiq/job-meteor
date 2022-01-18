@@ -11,12 +11,12 @@ const SimpleSlider = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
-    speed: 800,
+    speed: 500,
     autoplaySpeed: 10000,
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1240,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

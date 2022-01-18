@@ -20,11 +20,17 @@ const HeaderModal = () => {
           </a>
         </li>
         <li className={styles.item}>
-          <p>Войти</p>
+          <a className={styles.hr} href="/">
+            Войти
+          </a>
         </li>
-        <li>
+        <li className={styles.itemNetwork}>
           <svg className={styles.svgNetwork}>
             <use className={styles.network} href={`${svg}#network`}></use>
+          </svg>
+          <p>RU</p>
+          <svg className={styles.arrowDown}>
+            <use className={styles.Arrow} href={`${svg}#arrowDown`}></use>
           </svg>
         </li>
       </ul>

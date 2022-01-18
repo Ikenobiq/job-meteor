@@ -1,10 +1,16 @@
 @import "../../../shared/styles/common.scss";
-.hero {
-  padding: 76px 20px 47px 20px;
-
+.heroBack {
   background-color: getColor("bg-third");
+  width: 100%;
+}
+.hero {
+  padding: 76px 0px 47px 0px;
+
   @include desktop {
-    padding: 76px 100px 60px 100px;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 76px 0px 60px 0px;
   }
 }
 .paragraph {

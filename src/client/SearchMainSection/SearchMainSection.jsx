@@ -2,7 +2,7 @@ import Button from "../../shared/components/Button/Button";
 import TextField from "../../shared/components/TextField/TextField";
 import styles from "./SearchMainSection.module.scss";
 import svg from "../../shared/images/sprite.svg";
-const SearchMainSection = () => {
+const SearchMainSection = ({ variant }) => {
   return (
     <div className={styles.mainDiv}>
       <div className={styles.searchDiv}>
@@ -18,7 +18,11 @@ const SearchMainSection = () => {
         </svg>
       </div>
       <a href="./find">
-        <Button className={styles.searchBtn} text="Найти кандидатов" />
+        <Button
+          className={styles.searchBtn}
+          variant={variant}
+          text="Найти кандидатов"
+        />
       </a>
     </div>
   );

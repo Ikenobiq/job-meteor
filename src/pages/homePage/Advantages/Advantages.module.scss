@@ -12,6 +12,7 @@
   flex-direction: column;
   @include desktop {
     flex-direction: row;
+    align-items: center;
   }
 }
 .list .item:nth-child(1n) {
@@ -26,26 +27,29 @@
 
 .item {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   width: 335px;
   height: 259px;
   margin-left: auto;
   margin-right: auto;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
   @include desktop {
     width: 396px;
     height: 396px;
+    margin-bottom: 0px;
     &:not(:last-child) {
       margin-right: 26px;
+      margin-bottom: 0px;
     }
-  }
-  &:not(:last-child) {
-    margin-bottom: 20px;
   }
 }
 .heading {
   position: relative;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 59px;
@@ -59,19 +63,31 @@
     content: "";
     display: inline-block;
     top: -24%;
-    left: 0%;
+    left: 30%;
     width: 84px;
     height: 1px;
-    margin-left: 124px;
     background-color: getColor("text-primary");
   }
-}
-.paragraph {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 34px;
-  color: getColor("text-primary");
-  text-align: center;
+  @include desktop {
+    &::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      top: -24%;
+      left: 30%;
+      width: 84px;
+      height: 1px;
+      background-color: getColor("text-primary");
+      margin: 0px;
+    }
+  }
+  .paragraph {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    color: getColor("text-primary");
+    text-align: center;
+  }
 }

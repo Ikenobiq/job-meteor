@@ -14,7 +14,7 @@ const Header = ({ burger }) => {
     setShowModal(!showModal);
   };
   const closeModal = () => {
-    setShowModal(false);
+    setShowModal(!showBurger);
   };
   return (
     <header
@@ -55,7 +55,9 @@ const Header = ({ burger }) => {
               </svg>
             </li>
             <li>
-              <p className={styles.HeaderDesktopIn}>Войти</p>
+              <a href="/" className={styles.HeaderDesktopIn}>
+                Войти
+              </a>
             </li>
           </ul>
         </div>
@@ -63,7 +65,7 @@ const Header = ({ burger }) => {
           <Button
             className={styles.HeaderModal}
             text={
-              <svg className={styles.svg}>
+              <svg className={styles.svgBurger}>
                 <use className={styles.Arrow} href={`${svg}#burger`}></use>
               </svg>
             }

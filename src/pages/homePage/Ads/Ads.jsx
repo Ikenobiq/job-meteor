@@ -1,6 +1,8 @@
 import astronaut from "../../../shared/images/mobile/astronaut.png";
-import appstore from "../../../shared/images/mobile/appstore.png";
-import googleplay from "../../../shared/images/mobile/googleplay.png";
+import appstoreM from "../../../shared/images/mobile/appstoreM.png";
+import googleplayM from "../../../shared/images/mobile/googleplayM.png";
+import appstore from "../../../shared/images/desktop/appstore.jpg";
+import googleplay from "../../../shared/images/desktop/googleplay.jpg";
 import phons from "../../../shared/images/desktop/phons.png";
 import styles from "./Ads.module.scss";
 import useMedia from "../../../client/useMedia";
@@ -22,12 +24,16 @@ const Ads = () => {
         </div>
         <div className={styles.linkDiv}>
           <a className={styles.storeLink} href="/">
-            <img className={styles.storeImg} src={appstore} alt="app store" />
+            <img
+              className={styles.storeImg}
+              src={isMobile ? appstoreM : appstore}
+              alt="app store"
+            />
           </a>
           <a className={styles.storeLink} href="/">
             <img
               className={styles.storeImg}
-              src={googleplay}
+              src={isMobile ? googleplayM : googleplay}
               alt="google play"
             />
           </a>

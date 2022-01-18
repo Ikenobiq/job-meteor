@@ -12,7 +12,7 @@ const Lobby = () => {
           Юра Марченко
         </p>
       </div>
-      <SearchMainSection />
+      <SearchMainSection variant={"secondary"} />
     </div>
   );
 };

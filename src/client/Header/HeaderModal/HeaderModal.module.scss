@@ -20,6 +20,19 @@
   line-height: 36px;
   padding: 15px;
   border-bottom: 1px solid getColor("text-primary");
+  &Network {
+    display: flex;
+    color: getColor("text-primary");
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    padding: 15px;
+    border-bottom: 1px solid getColor("text-primary");
+    align-items: center;
+    cursor: pointer;
+  }
 }
 .jobSeeker {
   display: flex;
@@ -42,6 +55,17 @@
 .svgNetwork {
   width: 40px;
   height: 40px;
-  margin-top: 30px;
   fill: getColor("text-primary");
+  color: getColor("text-primary");
+  margin-right: 8px;
+}
+.network {
+  color: getColor("text-primary");
+}
+.arrowDown {
+  fill: getColor("text-primary");
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  margin-right: 5px;
 }

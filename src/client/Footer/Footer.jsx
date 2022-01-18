@@ -61,7 +61,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className={styles.Footer}>
+      <div className={styles.FooterSocialDiv}>
         <div className={styles.svgDiv}>
           <svg className={styles.svg}>
             <use href={`${svg}#twitter`}></use>
@@ -96,15 +96,13 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={styles.privacy}>
+        <div className={styles.privacyWrap}>
           <a className={styles.privacyLink} href="/">
             Privacy Policy{" "}
           </a>
-          <a className={styles.privacyLink} href="/">
+          <a className={styles.termsLink} href="/">
             Terms of Use
           </a>
-        </div>
-        <div className={styles.reserved}>
           <p className={styles.reservedP}>
             © 2021 Job Meteor. All rights reserved
           </p>

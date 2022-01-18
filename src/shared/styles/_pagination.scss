@@ -3,52 +3,60 @@
   list-style-type: none;
 
   .pagination-item {
-    padding: 0 12px;
-    height: 32px;
-    text-align: center;
-    margin: auto 4px;
-    color: rgba(0, 0, 0, 0.87);
+    height: 21px;
+    width: 21px;
+    margin: auto 8px;
     display: flex;
     box-sizing: border-box;
     align-items: center;
+    justify-content: center;
     letter-spacing: 0.01071em;
     border-radius: 16px;
-    line-height: 1.43;
-    font-size: 13px;
-    min-width: 32px;
+    min-width: 21px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #adadad;
 
     &.dots:hover {
       background-color: transparent;
       cursor: default;
+      color: #000046;
     }
     &:hover {
-      background-color: rgba(0, 0, 0, 0.04);
+      background-color: #000046;
+      color: #ffffff;
       cursor: pointer;
     }
 
     &.selected {
-      background-color: rgba(0, 0, 0, 0.08);
+      background-color: #000046;
+      color: #ffffff;
     }
 
     .arrow {
       &::before {
         position: relative;
-        /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
         content: "";
-        /* By using an em scale, the arrows will size with the font */
         display: inline-block;
-        width: 0.4em;
-        height: 0.4em;
-        border-right: 0.12em solid rgba(0, 0, 0, 0.87);
-        border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+        width: 24px;
+        height: 24px;
       }
 
       &.left {
-        transform: rotate(-135deg) translate(-50%);
+        background-image: url(../../shared/images/arrLeft.svg);
+        background-repeat: no-repeat;
+        background-position: center;
       }
 
       &.right {
-        transform: rotate(45deg);
+        background-image: url(../../shared/images/arrLeft.svg);
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        background-position: center;
+        fill: greenyellow;
       }
     }
 
@@ -56,8 +64,8 @@
       pointer-events: none;
 
       .arrow::before {
-        border-right: 0.12em solid rgba(0, 0, 0, 0.43);
-        border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+        background-color: transparent;
+        cursor: default;
       }
 
       &:hover {

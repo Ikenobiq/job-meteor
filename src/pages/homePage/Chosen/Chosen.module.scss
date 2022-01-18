@@ -2,14 +2,16 @@
 .chosen {
   padding-top: 9px;
   padding-bottom: 38px;
-  width: 380px;
+  width: 375px;
   margin-left: auto;
   margin-right: auto;
   @include desktop {
+    padding-top: 80px;
+
     width: 1240px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 50px;
+    padding-bottom: 18px;
   }
 }
 .heading {
@@ -38,25 +40,32 @@
   }
 }
 .list {
+  width: 335px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: -30.3px;
-  margin-top: -30.3px;
+
+  margin: 0px 0px -30.3px -15px;
   padding: 0px;
   @include desktop {
-    margin-left: -50px;
-    margin-top: -31px;
+    width: 1140px;
+    margin: 0px -30px -30px 0px;
+  }
+}
+.listWrap {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    margin-right: 90px;
   }
 }
 .item {
-  margin-left: 30.3px;
-  margin-top: 30.3px;
+  margin-left: 23px;
+  margin-bottom: 30.3px;
   flex-basis: calc((100% - 122px) / 4);
   @include desktop {
-    margin-left: 16px;
-    margin-top: 31px;
+    margin-left: 25px;
+    margin-top: 30px;
     flex-basis: calc((100% - 180px) / 6);
   }
 }

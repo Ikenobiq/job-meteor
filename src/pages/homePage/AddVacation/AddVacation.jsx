@@ -13,7 +13,6 @@ const AddVacation = () => {
               Работодатель смогут найти вас и предложить отличную работу.
             </p>
           </div>
-
           <Button className={styles.addBtn} text="разместить вакансию" />
         </div>
       </div>

@@ -12,8 +12,8 @@
   @include desktop {
     position: relative;
     flex-direction: row;
-    margin-top: 169px;
-    justify-content: center;
+    margin-top: 274px;
+    margin-bottom: 164px;
     width: 1240px;
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +23,18 @@
   @include desktop {
     display: flex;
     flex-direction: column;
-    margin-left: 300px;
+    justify-content: center;
+    margin-left: 380px;
+    margin-right: 184px;
+    height: 323px;
+  }
+}
+.adsLinkWraper {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1240px;
   }
 }
 .astronaut {
@@ -35,8 +46,8 @@
     position: absolute;
     width: 264px;
     height: 422px;
-    top: -200px;
-    left: 10%;
+    top: -105px;
+    left: -9px;
   }
 }
 .heading {
@@ -89,6 +100,9 @@
     display: flex;
     flex-direction: column;
   }
+}
+.storeLink:not(:last-child) {
+  margin-bottom: 12px;
 }
 .storeImg {
   width: 143px;
