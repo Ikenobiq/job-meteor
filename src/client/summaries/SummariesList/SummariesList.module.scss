@@ -1,4 +1,7 @@
 @import "../../../shared/styles/common.scss";
 .list {
   width: 335px;
+  @include desktop {
+    width: 838px;
+  }
 }

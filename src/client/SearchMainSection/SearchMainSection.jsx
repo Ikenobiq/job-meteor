@@ -2,11 +2,18 @@ import Button from "../../shared/components/Button/Button";
 import TextField from "../../shared/components/TextField/TextField";
 import styles from "./SearchMainSection.module.scss";
 import svg from "../../shared/images/sprite.svg";
+import useMedia from "../../client/useMedia";
 const SearchMainSection = ({ variant }) => {
+  const { isMobile } = useMedia();
   return (
     <div className={styles.mainDiv}>
       <div className={styles.searchDiv}>
-        <TextField className={styles.inputSearch} placeholder="Поиск" />
+        <TextField
+          className={styles.inputSearch}
+          placeholder={
+            isMobile ? "Поиск" : "На какую должность вы ищете кандидата?"
+          }
+        />
         <svg className={styles.svgZoom}>
           <use className={styles.zoom} href={`${svg}#zoom`}></use>
         </svg>

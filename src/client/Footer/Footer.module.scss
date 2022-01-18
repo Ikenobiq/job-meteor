@@ -1,6 +1,5 @@
 @import "../../shared/styles/common.scss";
 .footer {
-  margin-top: 60px;
   background-color: getColor("text-primary");
   padding-top: 122px;
   padding-bottom: 22px;
@@ -10,7 +9,6 @@
   @include desktop {
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: 164px;
     flex-direction: column;
   }
 }

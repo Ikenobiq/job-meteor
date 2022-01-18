@@ -5,9 +5,13 @@
   align-items: center;
   align-content: center;
   margin-top: 47px;
-}
-
-.svgSize {
-  width: 24px;
-  height: 24px;
+  margin-bottom: 80px;
+  @include desktop {
+    align-items: flex-start;
+    width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
 }

@@ -3,25 +3,75 @@
   padding: 16px;
   border: 1px solid getColor("text-accent-secondary");
   margin-bottom: 30px;
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
 }
 .avatarDiv {
-  display: inline-block;
-  margin-right: 16px;
-  margin-bottom: 26px;
+  position: absolute;
+
+  width: 70px;
+  height: 70px;
+  @include desktop {
+    position: relative;
+    width: 164px;
+    height: 164px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
 }
 .avatar {
   width: 70px;
   height: 70px;
+  @include desktop {
+    width: 164px;
+    height: 164px;
+  }
 }
 .describe {
   display: inline-block;
   width: 214px;
+  margin-left: 90px;
+  @include desktop {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  &Wrap {
+    display: inline-block;
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &NameCityWrap {
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 16px;
+    }
+  }
   &Heading {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     color: getColor("text-primary");
     margin-bottom: 6px;
+    @include desktop {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 16px;
+    }
   }
   &Paragraph {
     font-weight: 400;
@@ -29,6 +79,12 @@
     line-height: 20px;
     color: getColor("text-primary");
     margin-bottom: 6px;
+    @include desktop {
+      font-size: 16px;
+      line-height: 20px;
+      margin-right: 20px;
+      margin-bottom: 0px;
+    }
   }
   &City {
     font-weight: 400;
@@ -36,6 +92,12 @@
     line-height: 16px;
     margin-bottom: 20px;
     color: getColor("text-paragraph");
+    @include desktop {
+      font-size: 14px;
+      line-height: 17px;
+      color: getColor("text-primary");
+      margin-bottom: 0px;
+    }
   }
 }
 .svgPoint {
@@ -43,6 +105,10 @@
   width: 12px;
   height: 17px;
   fill: getColor("text-paragraph");
+  @include desktop {
+    fill: getColor("text-primary");
+    margin-right: 4px;
+  }
 }
 .experienceList {
   font-weight: 400;
@@ -54,6 +120,10 @@
 .isOnline {
   display: flex;
   flex-direction: row;
+  @include desktop {
+    display: inline-flex;
+    margin-right: 20px;
+  }
 }
 .isOnlineP {
   display: flex;
@@ -77,8 +147,13 @@
 .status {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 300px;
   margin-right: 76px;
+  @include desktop {
+    display: inline-flex;
+    position: relative;
+  }
 }
 .statusP {
   font-weight: 400;
@@ -89,6 +164,11 @@
 }
 .statusSvgDiv {
   margin-left: auto;
+  @include desktop {
+    position: absolute;
+    top: -80px;
+    right: -85%;
+  }
 }
 .statusHeart {
   width: 24px;

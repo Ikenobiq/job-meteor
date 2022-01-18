@@ -3,6 +3,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include desktop {
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .settingsDiv {
   width: 335px;
@@ -10,6 +19,12 @@
   justify-content: flex-end;
   position: relative;
   margin-bottom: 32px;
+  @include desktop {
+    order: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
 }
 .settingsBtn {
   width: 40px;
@@ -22,12 +37,21 @@
 }
 .result {
   display: flex;
+  flex-direction: row;
   width: 335px;
+  @include desktop {
+    flex-direction: column;
+    width: 838px;
+  }
+  &BaseWrap {
+  }
   &Wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 335px;
+    @include desktop {
+    }
   }
   &Heading {
     position: relative;
@@ -37,7 +61,7 @@
     line-height: 29px;
     text-transform: uppercase;
     color: getColor("text-accent");
-    max-width: 270px;
+    width: 270px;
     margin-bottom: 25px;
     &::before {
       position: absolute;
@@ -48,12 +72,21 @@
       height: 1px;
       background-color: getColor("text-accent");
     }
+    @include desktop {
+      width: 600px;
+      margin-bottom: 20px;
+      font-size: 32px;
+      line-height: 39px;
+    }
   }
   &Span {
     color: getColor("hover-color");
   }
   &DivParagraph {
-    max-width: 155px;
+    width: 155px;
+    @include desktop {
+      width: 600px;
+    }
   }
   &Paragraph {
     font-family: Montserrat, sans-serif;
@@ -61,13 +94,21 @@
     font-size: 12px;
     line-height: 15px;
     color: getColor("text-paragraph");
+    @include desktop {
+      font-size: 16px;
+      line-height: 20px;
+      width: 416px;
+    }
   }
 }
 .interval {
   position: relative;
   display: flex;
   flex-direction: row;
-  max-width: 155px;
+  width: 155px;
+  @include desktop {
+    width: 150px;
+  }
   &Set {
     font-family: Montserrat, sans-serif;
     font-weight: 500;
@@ -76,6 +117,11 @@
     color: getColor("hover-color");
     margin-right: 16px;
     cursor: pointer;
+    @include desktop {
+      font-size: 16px;
+      line-height: 20px;
+      width: 150px;
+    }
   }
   &Btn {
     width: 24px;

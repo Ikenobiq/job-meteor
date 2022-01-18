@@ -7,10 +7,17 @@
   padding-top: 11px;
   padding-bottom: 20px;
   margin-bottom: 40px;
+  @include desktop {
+    padding-top: 73px;
+    padding-bottom: 60px;
+  }
 }
 .personDiv {
   display: flex;
   flex-direction: row;
+  @include desktop {
+    display: none;
+  }
 }
 .person {
   display: flex;
